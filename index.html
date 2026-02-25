@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Fullstack Developer</title>
+    <meta name="description" content="Curriculum Vitae de un Desarrollador Fullstack enfocado en el Backend.">
+    <!-- Google Fonts: Inter para un look moderno y limpio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Layout principal dividido en barra lateral (opcional en desktop) o flujo continuo -->
+    <div class="app-container">
+        
+        <!-- Header / Hero Section -->
+        <header class="hero-section glass-panel fade-in">
+            <div class="profile-container">
+                <div class="profile-image-placeholder">
+                    <!-- El usuario puede agregar su foto aquí. Ponemos un avatar genérico por ahora -->
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <div class="hero-content">
+                    <h1 class="gradient-text" id="profile-name"></h1>
+                    <h2 class="subtitle"><span id="profile-role"></span> <span class="highlight" id="profile-focus"></span></h2>
+                    <p class="bio" id="profile-bio"></p>
+                    
+                    <div class="contact-links" id="profile-links">
+                        <!-- Enlaces inyectados desde JS -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Tech Stack Section -->
+            <section id="skills" class="section glass-panel slide-up">
+                <div class="section-header">
+                    <div class="icon-wrapper"><i class="fa-solid fa-code"></i></div>
+                    <h2>Stack Tecnológico</h2>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-server"></i> Backend & Base de Datos</h3>
+                        <div class="tech-tags" id="skills-backend">
+                            <!-- Skills inyectadas desde JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Frontend (Fullstack)</h3>
+                        <div class="tech-tags" id="skills-frontend">
+                            <!-- Skills inyectadas desde JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Background Section -->
+            <section id="education" class="section glass-panel slide-up delay-1">
+                <div class="section-header">
+                    <div class="icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h2>Formación Académica</h2>
+                </div>
+                
+                <div class="timeline" id="education-list">
+                    <!-- Educación inyectada desde JS -->
+                </div>
+            </section>
+
+            <div class="two-column-grid">
+                <!-- Courses & Certifications -->
+                <section id="courses" class="section glass-panel slide-up delay-2">
+                    <div class="section-header">
+                        <div class="icon-wrapper"><i class="fa-solid fa-certificate"></i></div>
+                        <h2>Cursos y Certificaciones</h2>
+                    </div>
+                    
+                    <ul class="list-cards" id="courses-list">
+                        <!-- Cursos inyectados desde JS -->
+                    </ul>
+                </section>
+
+                <!-- Languages -->
+                <section id="languages" class="section glass-panel slide-up delay-3">
+                    <div class="section-header">
+                        <div class="icon-wrapper"><i class="fa-solid fa-language"></i></div>
+                        <h2>Idiomas</h2>
+                    </div>
+                    
+                    <div class="language-bars" id="languages-list">
+                        <!-- Idiomas inyectados desde JS -->
+                    </div>
+                </section>
+            </div>
+            
+        </main>
+        
+        <footer class="site-footer">
+            <p>© <span id="current-year"></span> <span id="footer-name"></span>. Construido con Vanilla HTML, CSS & JS.</p>
+        </footer>
+    </div>
+
+    <!-- Archivo JS de datos y lógica principal -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
