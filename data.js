@@ -5,7 +5,7 @@ const cvData = {
         focus: "(Backend Focus)",
         bio: "Apasionado por crear arquitecturas escalables, APIs robustas y experiencias de usuario fluidas. Transformando problemas complejos en soluciones de código elegante y eficiente.",
         email: "josegiraudo7@gmail.com",
-        linkedin: "https://linkedin.com/in/joségiraudo-408443218",
+        linkedin: "https://www.linkedin.com/in/jose-giraudo-408443218",
         github: "https://github.com/joseGiraudo"
     },
     skills: {
