@@ -3,7 +3,7 @@ const cvData = {
         name: "José Giraudo",
         role: "Desarrollador Fullstack",
         focus: "(Backend Focus)",
-        bio: "Apasionado por crear arquitecturas escalables, APIs robustas y experiencias de usuario fluidas. Transformando problemas complejos en soluciones de código elegante y eficiente.",
+        bio: "Desarrollador Fullstack con foco en backend, con experiencia en construcción de APIs robustas, integración de servicios y diseño de arquitecturas escalables, priorizando buenas prácticas y mantenibilidad. Con conocimientos en DevOps, CI/CD y gestión de proyectos.",
         email: "josegiraudo7@gmail.com",
         linkedin: "https://www.linkedin.com/in/jose-giraudo-408443218",
         github: "https://github.com/joseGiraudo"
