@@ -55,5 +55,15 @@ const cvData = {
             level: "Avanzado (B1 Cambridge)",
             percentage: 80
         }
+    ],
+    projects: [
+        {
+            title: "GestorClub",
+            subtitle: "Spring Boot, PostgreSQL, Angular",
+            githubLink: "https://github.com/joseGiraudo/gestorClub-be",
+            demoLink: "https://gestorclubbs.onrender.com/",
+            image: "./images/landing.png",
+            description: "Aplicación completa para la gestión de clubes deportivos. Permite administrar socios, actividades, pagos y finanzas del club."
+        }
     ]
 };

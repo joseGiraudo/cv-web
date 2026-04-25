@@ -69,7 +69,53 @@ function renderCVData() {
             <div class="progress-bar"><div class="progress" style="width: ${lang.percentage}%;"></div></div>
         </div>
     `).join('');
+
+    // ---- Projects ----
+    const projectsContainer = document.getElementById('projects-list');
+    if (cvData.projects && cvData.projects.length > 0) {
+        projectsContainer.innerHTML = cvData.projects.map((proj, index) => `
+            <div class="project-card">
+                <div class="project-img-container" onclick="toggleProjectDesc(${index})" title="Haz clic para ver más info">
+                    <img src="${proj.image}" alt="${proj.title}" class="project-img" loading="lazy">
+                    <div class="project-img-overlay">
+                        <span>Ver detalle <i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header" onclick="toggleProjectDesc(${index})" title="Haz clic para ver más info">
+                        <div class="project-titles">
+                            <h3 class="project-title">${proj.title}</h3>
+                            <div class="project-subtitle">${proj.subtitle}</div>
+                        </div>
+                        <button class="expand-btn" id="expand-btn-${index}" aria-label="Ver más información">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="project-desc" id="project-desc-${index}">${proj.description}</div>
+                    
+                    <div class="project-actions">
+                        ${proj.githubLink ? `<a href="${proj.githubLink}" target="_blank" class="project-btn btn-outline"><i class="fa-brands fa-github"></i> Repositorio</a>` : ''}
+                        ${proj.demoLink ? `<a href="${proj.demoLink}" target="_blank" class="project-btn btn-fill"><i class="fa-solid fa-external-link-alt"></i> Visitar Web</a>` : ''}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
 }
+
+// Función global para alternar la descripción del proyecto
+window.toggleProjectDesc = function(index) {
+    const descElement = document.getElementById(`project-desc-${index}`);
+    const btnElement = document.getElementById(`expand-btn-${index}`);
+    
+    if (descElement.classList.contains('open')) {
+        descElement.classList.remove('open');
+        btnElement.classList.remove('open');
+    } else {
+        descElement.classList.add('open');
+        btnElement.classList.add('open');
+    }
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     // 0. Render CV Data from data.js
