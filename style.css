@@ -316,6 +316,18 @@ ul {
     /* Override global a:hover */
 }
 
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-glass);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
 .btn-icon {
     width: 3rem;
     height: 3rem;

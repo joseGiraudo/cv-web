@@ -16,6 +16,9 @@ function renderCVData() {
         <a href="mailto:${cvData.profile.email}" class="btn btn-primary">
             <i class="fa-solid fa-envelope"></i> Contactar
         </a>
+        <a href="${cvData.profile.cvPdf}" target="_blank" class="btn btn-secondary" title="Descargar CV en PDF">
+            <i class="fa-solid fa-file-arrow-down"></i> Descargar CV
+        </a>
         <a href="${cvData.profile.linkedin}" target="_blank" class="btn btn-icon" title="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
