@@ -276,6 +276,7 @@ ul {
    ========================================================================== */
 .contact-links {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-md);
     margin-top: var(--spacing-md);
     align-items: center;
