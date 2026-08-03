@@ -65,6 +65,14 @@ const cvData = {
             demoLink: "https://gestorclubbs.onrender.com/",
             image: "./images/landing.png",
             description: "Aplicación completa para la gestión de clubes deportivos. Permite administrar socios, actividades, pagos y finanzas del club."
+        },
+        {
+            title: "Remitos App",
+            subtitle: "React + Typescript",
+            githubLink: "https://github.com/joseGiraudo/remitos-app",
+            demoLink: "https://remitos-app-virid.vercel.app/",
+            image: "./images/remitos-app.png",
+            description: "Aplicación simple para la generación de remitos. Desarrollada con React + Typescipt, y Vite como bundler y servidor de desarrollo. Desplegada en Vercel"
         }
     ]
 };
